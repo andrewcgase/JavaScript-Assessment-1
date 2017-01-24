@@ -2,6 +2,8 @@
 
 var contacts = [];
 
+// The length of contacts is 0
+
 
 //2. Add the following people to the contacts array.
 
@@ -10,6 +12,7 @@ var jake = {
 	email: 'jake.overall@boisecodeworks.com',
 	title: 'founder'
 };
+
 var matt = {
 	name: 'Matt Overall',
 	email: 'matt.overall@boisecodeworks.com',
@@ -36,6 +39,20 @@ var stefan = {
 	title: 'mentor'
 };
 
+contacts.push(jake)
+contacts.push(matt)
+contacts.push(chris)
+contacts.push(tony)
+contacts.push(andrew)
+contacts.push(stefan)
 
 //3. Woops after adding all of those people to the same contacts list you realized you need a list just the mentors. Create a new variable named mentors populate it using contacts array. 
 
+var mentors = []
+	for(var mentor of contacts){
+		if (mentor.title == 'mentor'){
+			mentors.push(mentor)
+		}
+	}
+
+// mentors is an array of mentors
